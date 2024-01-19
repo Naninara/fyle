@@ -89,7 +89,7 @@
   padding: 0.5%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 580px) {
   #repos-conatiner {
     flex-direction: column;
   }
@@ -99,5 +99,11 @@
 
   #profile {
     flex-direction: column;
+  }
+  #navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    margin: 5px 0px;
   }
 }

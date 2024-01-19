@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Fyle Task</title>
   </head>
   <body>
     <div id="navbar">
       <div><h3>Github Repo Search</h3></div>
-      <div class="search">
-        <input type="text" id="searchBar" /><button onclick="getData()">
-          Search
-        </button>
-      </div>
-      <div>
+      <div style="display: flex; flex-direction: column">
+        <p>Select Number Of Repos per Page</p>
         <select onchange="getData(this.value)">
-          <option>Select Repos Per Page</option>
           <option>10</option>
           <option>20</option>
           <option>40</option>
           <option>50</option>
+          <option>100</option>
         </select>
+      </div>
+      <div class="search">
+        <input type="text" id="searchBar" /><button onclick="getData()">
+          Search
+        </button>
       </div>
     </div>
     <div id="profile"></div>
@@ -32,9 +33,9 @@
     </div>
 
     <div id="buttons-container">
-      <button onclick="prevPage()" id="prev-button">Older</button>
+      <button onclick="prevPage()" id="prev-button">prev</button>
       <input value="1" readonly style="width: 20px" id="pagination-value" />
-      <button onclick="nextPage()" id="next-button">Newer</button>
+      <button onclick="nextPage()" id="next-button">next</button>
     </div>
   </body>
   <script src="script.js"></script>
