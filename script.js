@@ -1,3 +1,4 @@
+//initail function to call getting data
 function getData(perPage = 10) {
   const userName = document.getElementById("searchBar").value;
   if (userName === "") {
@@ -11,6 +12,7 @@ function getData(perPage = 10) {
   getProfile(userName);
 }
 
+//function for navigating previous page
 function prevPage() {
   const userName = document.getElementById("searchBar").value;
   const pageNo = document.getElementById("pagination-value");
@@ -23,6 +25,8 @@ function prevPage() {
     return;
   }
 }
+
+//function for navigating next page
 
 function nextPage() {
   const userName = document.getElementById("searchBar").value;
